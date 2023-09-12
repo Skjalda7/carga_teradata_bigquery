@@ -1,0 +1,1 @@
+# carga_teradata_bigquery
