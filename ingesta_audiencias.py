@@ -40,9 +40,9 @@ def my_dag():
 
     @task
     def homebanking():
-        conn = BaseHook.get_connection(f'Teradata SYSDBA')
+        conn = BaseHook.get_connection(f'Teradata')
         con_tera = teradatasql.connect(None,
-                                   host=f"172.30.74.22",
+                                   host=f"localhost",
                                    user=f"{conn.login}",
                                    password=f"{conn.password}",
                                    column_name='false')
